@@ -14,7 +14,7 @@ export default class LFTP extends HelperFTP implements GenericObject {
     /**
      * temp folder
      */
-    tmp: any;
+    tmp: string;
     static lftpPath: string;
     constructor(config: Client.Options);
     private resolveLFTP;
@@ -30,7 +30,7 @@ export default class LFTP extends HelperFTP implements GenericObject {
      * @param remotePath
      * @returns
      */
-    list(remotePath: string): any;
+    list(remotePath: string): Bluebird<Client.ListingElement[][]>;
     /**
      * read file from remote
      * @param remotePath

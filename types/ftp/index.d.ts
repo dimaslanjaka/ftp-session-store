@@ -1,3 +1,4 @@
+import Bluebird from 'bluebird';
 import { Options } from 'ftp';
 import { FTP } from './ftp';
 import HelperFTP from './helper';
@@ -24,7 +25,7 @@ export default class SuperiorFtp extends HelperFTP {
     download(remote: string, local: string): Promise<void>;
     private downloadIndicator;
     private startDownload;
-    exist(remotePath: string): any;
-    list(remotePath: string): any;
+    exist(remotePath: string): Bluebird<Client.ListingElement[]>;
+    list(remotePath: string): Bluebird<ListingElement[]>;
     read<T>(remotePath: string, localPath?: string): Promise<Awaited<T>>;
 }

@@ -30,7 +30,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "ansi-color": "^0.2.1",
+    "ansi-colors": "^4.1.3",
     "bluebird": "^3.7.2",
     "debug": "^4.3.4",
     "express-session": "^1.17.3",
@@ -40,6 +40,7 @@
     "upath": "^2.0.1"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.37",
     "@types/debug": "^4.1.7",
     "@types/node": "^18.7.21",
     "cross-env": "^7.0.3",
