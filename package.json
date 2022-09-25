@@ -1,5 +1,5 @@
 {
-  "name": "session-store-ftp",
+  "name": "ftp-session-store",
   "version": "1.0.0",
   "description": "",
   "main": "dist/session-store.js",
