@@ -17,7 +17,8 @@
   "files": [
     "types",
     "lib",
-    "src"
+    "src",
+    "*.json"
   ],
   "author": {
     "name": "Dimas Lanjaka",

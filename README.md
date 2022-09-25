@@ -7,6 +7,7 @@ Express Session Store On FTP
 import express from 'express'; // const express = require('express');
 import session from 'express-session'; // const session = require('express-session');
 import { join } from 'path';
+import SessionStore from 'ftp-session-store'; // const SessionStore = require('ftp-session-store');
 
 const app = express();
 /**
