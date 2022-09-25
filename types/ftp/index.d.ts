@@ -1,9 +1,12 @@
-import * as Bluebird from 'bluebird';
+import Bluebird from 'bluebird';
 import { ListingElement, Options } from 'ftp';
 import { FTP } from './ftp';
 import HelperFTP from './helper';
 import LFTP from './lftp';
 export declare type SuperiorFtpOptions = Options & {
+    /**
+     * cwd
+     */
     root: string;
 };
 export default class SuperiorFtp extends HelperFTP {

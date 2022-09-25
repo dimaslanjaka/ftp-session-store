@@ -1,4 +1,4 @@
-import * as Bluebird from 'bluebird';
+import Bluebird from 'bluebird';
 import debugLib from 'debug';
 import { existsSync, mkdirSync } from 'fs';
 import { ListingElement, Options } from 'ftp';
@@ -10,6 +10,9 @@ import LFTP from './lftp';
 const debug = debugLib('superior-ftp');
 
 export type SuperiorFtpOptions = Options & {
+  /**
+   * cwd
+   */
   root: string;
 };
 

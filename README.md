@@ -5,6 +5,9 @@ Express Session Store On FTP
 
 ```js
 import express from 'express'; // const express = require('express');
+import session from 'express-session'; // const session = require('express-session');
+import { join } from 'path';
+
 const app = express();
 /**
  * @type {import('express-session')['SessionOptions']}
@@ -37,18 +40,27 @@ const sess = {
     maxAge: 1 * 24 * 3600 * 1000
   },
   store: new SessionStore({
+    // store folder
     path: join(__dirname, '../tmp/sessions'),
-    connection: ftpInfo
+    // ftp connection information
+    connection: {
+      host: process.env.FTP_HOST,
+      port: parseInt(process.env.FTP_PORT || '21'),
+      user: process.env.FTP_USER,
+      password: process.env.FTP_PASS,
+      protocol: process.env.FTP_PROTOCOL,
+      root: process.env.FTP_PATH
+    }
   }),
   resave: true,
   saveUninitialized: false
 };
 
 if (app.get('env') === 'production') {
-  app.set('trust proxy', 1); // trust first proxy
-  // sess.cookie.secure = true; // serve secure cookies
-  if ('cookie' in sess && typeof sess.cookie == 'object')
+  app.set('trust proxy', 1);
+  if ('cookie' in sess && typeof sess.cookie == 'object') {
     sess.cookie.secure = true;
+  }
 }
 
 app.use(session(sess));
