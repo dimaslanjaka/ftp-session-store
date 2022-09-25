@@ -2,7 +2,7 @@
   "name": "ftp-session-store",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/session-store.js",
+  "main": "lib/session-store.js",
   "types": "types/session-store.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json"
@@ -16,13 +16,17 @@
   ],
   "files": [
     "types",
-    "dist",
+    "lib",
     "src"
   ],
   "author": {
     "name": "Dimas Lanjaka",
     "email": "dimaslanjaka@gmail.com",
     "url": "https://webmanajemen.com"
+  },
+  "repository": {
+    "url": "https://github.com/dimaslanjaka/ftp-session-store.git",
+    "type": "git"
   },
   "license": "ISC",
   "dependencies": {

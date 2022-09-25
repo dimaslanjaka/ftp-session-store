@@ -1,5 +1,4 @@
-import Bluebird from 'bluebird';
-import { ListingElement, Options } from 'ftp';
+import { Options } from 'ftp';
 import { FTP } from './ftp';
 import HelperFTP from './helper';
 import LFTP from './lftp';
@@ -25,7 +24,7 @@ export default class SuperiorFtp extends HelperFTP {
     download(remote: string, local: string): Promise<void>;
     private downloadIndicator;
     private startDownload;
-    exist(remotePath: string): Bluebird<ListingElement[]>;
-    list(remotePath: string): Bluebird<ListingElement[]>;
+    exist(remotePath: string): any;
+    list(remotePath: string): any;
     read<T>(remotePath: string, localPath?: string): Promise<Awaited<T>>;
 }

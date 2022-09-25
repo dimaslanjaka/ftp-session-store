@@ -10,7 +10,7 @@
     "noImplicitAny": false,
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "dist",
+    "outDir": "lib",
     "typeRoots": [
       "node_modules/@types",
       "src/types"
