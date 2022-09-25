@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true
+}

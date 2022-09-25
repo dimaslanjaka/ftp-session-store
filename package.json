@@ -1,0 +1,46 @@
+{
+  "name": "session-store-ftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/session-store.js",
+  "types": "types/session-store.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [
+    "express",
+    "express-session",
+    "session",
+    "express-session-ftp",
+    "ftp"
+  ],
+  "files": [
+    "types",
+    "dist",
+    "src"
+  ],
+  "author": {
+    "name": "Dimas Lanjaka",
+    "email": "dimaslanjaka@gmail.com",
+    "url": "https://webmanajemen.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ansi-color": "^0.2.1",
+    "bluebird": "^3.7.2",
+    "debug": "^4.3.4",
+    "express-session": "^1.17.3",
+    "ftp": "^0.3.10",
+    "git-command-helper": "^1.0.4",
+    "persistent-cache": "github:dimaslanjaka/persistent-cache#improve2",
+    "upath": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/node": "^18.7.21",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}

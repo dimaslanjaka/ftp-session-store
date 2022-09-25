@@ -1,3 +1,9 @@
+# Custom
+tmp
+dist/cache
+src/cache
+.env
+
 # Logs
 logs
 *.log
