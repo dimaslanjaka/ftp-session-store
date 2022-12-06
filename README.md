@@ -40,6 +40,7 @@ const sess = {
     // 1 day expiration example
     maxAge: 1 * 24 * 3600 * 1000
   },
+  /** ftp store (Required) **/
   store: new SessionStore({
     // store folder
     path: join(__dirname, 'tmp/sessions'),
