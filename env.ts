@@ -14,6 +14,7 @@ if (!existsSync(join(__dirname, 'tmp'))) mkdirSync(join(__dirname, 'tmp'));
 const ProjectEnv = process.env;
 
 export default ProjectEnv;
+/** import this from test **/
 export const ftpInfo = {
   host: process.env.FTP_HOST,
   port: parseInt(process.env.FTP_PORT || '21'),
