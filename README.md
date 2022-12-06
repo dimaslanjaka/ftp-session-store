@@ -42,7 +42,7 @@ const sess = {
   },
   store: new SessionStore({
     // store folder
-    path: join(__dirname, '../tmp/sessions'),
+    path: join(__dirname, 'tmp/sessions'),
     // ftp connection information
     connection: {
       host: process.env.FTP_HOST,
