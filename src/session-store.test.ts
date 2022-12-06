@@ -64,6 +64,7 @@ app.get('/set', (req, res) => {
   res.redirect('/');
 });
 
-app.listen(4000, () => {
-  debug('Session Test Unit Running on http://localhost:4000');
+const port = 4000;
+app.listen(port, () => {
+  debug('Session Test Unit Running on http://localhost:'+port);
 });
