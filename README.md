@@ -1,5 +1,6 @@
-# express-session-ftp
-Express Session Store On FTP
+# ftp-session-store
+
+Express Session File Store On FTP. 
 
 ## Example
 
